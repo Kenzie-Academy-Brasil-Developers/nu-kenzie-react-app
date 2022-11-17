@@ -3,7 +3,7 @@
 }
 
 .section h1{
-    font-size: var(--size3);
+    font-size: var(--size2);
     font-weight: var(--weight8);
     margin-bottom: 25px;
 }
