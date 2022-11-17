@@ -1,3 +1,5 @@
+import './figure.css'
+
 export function Figure () {
     return (
         <figure>
