@@ -6,7 +6,7 @@ import { Section } from './components/Opening Page/Section/section'
 function App() {
   
   return (
-    <div className="App">
+    <div className="container App">
       <Section/>
       <Figure/>
     </div>
