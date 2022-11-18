@@ -1,0 +1,39 @@
+.bg-white{
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.header{
+    background-color: var(--grey4);
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div h1{
+    font-size: var(--size2);
+    font-weight: var(--weight8);
+}
+
+.header div h1 span{
+    color: var(--brand1);
+}
+
+.header div button {
+    background-color: var(--grey3);
+    padding: 12px 16px;
+    font-weight: var(--weight6);
+    font-size: var(--size4);
+    color: var(--size2);
+    margin: 20px 0;
+}
+
+.header div button:hover{
+    background-color: #cfcfcf;
+}

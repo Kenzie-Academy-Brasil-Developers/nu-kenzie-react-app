@@ -1,0 +1,39 @@
+.section{
+    max-width: 350px;
+}
+
+.section h1{
+    font-size: var(--size2);
+    font-weight: var(--weight8);
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.section h1 span{
+    color: var(--brand1);
+}
+
+.section p{
+    color: var(--white);
+    font-weight: var(--weight8);
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.section p + p{
+    font-size: var(--size4);
+    font-weight: var(--weight4);
+}
+
+.section button{
+    color: var(--white);
+    background-color: var(--brand1);
+    padding: 14px 90px;
+    font-weight: var(--weight5);
+    font-size: var(--size4);
+}
+
+.section button:hover{
+    background-color: var(--brand2);
+}
