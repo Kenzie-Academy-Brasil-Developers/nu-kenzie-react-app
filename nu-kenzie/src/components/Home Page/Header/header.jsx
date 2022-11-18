@@ -1,9 +1,9 @@
 import './header.css'
 
-function Header () {
+export function Header () {
     return (
-        <header className='container header'>
-            <div>
+        <header className='header'>
+            <div className='container'>
                 <h1><span>Nu</span> Kenzie</h1>
                 <button>Início</button>
             </div>

@@ -23,9 +23,9 @@ time, mark, audio, video, button, input, select, textarea {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  background-color: #242424;
+  /* background-color: #242424; */
   font-family: 'Nunito', sans-serif;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 :root {
