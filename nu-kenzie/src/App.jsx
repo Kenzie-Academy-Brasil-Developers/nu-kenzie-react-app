@@ -6,21 +6,29 @@ import { Figure } from './components/Opening Page/Figure/figure'
 import { Section } from './components/Opening Page/Section/section'
 
 function App() {
-  
+  const [page, setPage] = useState(true)
+
+  function openingPage () {
+    setPage(false)
+  }
+
+  function homePage () {
+    setPage(true)
+  }
   
   return (
+    page ? 
+    (<div className="container App">
+      <Section openingPage={openingPage}/>
+      <Figure/>
+    </div>) : 
     
-    // <div className="container App">
-    //   <Section/>
-    //   <Figure/>
-    // </div>
-    
-    <>
-      <Header/>
+    (<div className='bg-white'>
+      <Header homePage={homePage}/>
       <div className='container'>
         <Form/>
       </div>
-    </>
+    </div>)
     
   )
 }

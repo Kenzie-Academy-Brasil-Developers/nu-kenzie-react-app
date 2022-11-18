@@ -5,6 +5,7 @@
 .section h1{
     font-size: var(--size2);
     font-weight: var(--weight8);
+    color: var(--white);
     margin-bottom: 25px;
 }
 
@@ -13,6 +14,7 @@
 }
 
 .section p{
+    color: var(--white);
     font-weight: var(--weight8);
     font-size: 38px;
     line-height: 48px;
@@ -25,6 +27,7 @@
 }
 
 .section button{
+    color: var(--white);
     background-color: var(--brand1);
     padding: 14px 90px;
     font-weight: var(--weight5);

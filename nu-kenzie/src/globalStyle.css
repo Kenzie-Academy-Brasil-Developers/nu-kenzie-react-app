@@ -23,9 +23,19 @@ time, mark, audio, video, button, input, select, textarea {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  /* background-color: #242424; */
   font-family: 'Nunito', sans-serif;
-  /* color: #ffffff; */
+}
+
+body{
+  background-color: #242424;
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 :root {
@@ -57,13 +67,6 @@ time, mark, audio, video, button, input, select, textarea {
   --weight4: 400;
 }
 
-button {
-  border-radius: 8px;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  cursor: pointer;
-}
 
 .container{
   width: 80%;
