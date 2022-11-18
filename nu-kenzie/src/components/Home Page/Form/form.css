@@ -66,3 +66,7 @@
     background-color: var(--brand1);
     color: var(--white);
 }
+
+.form button:hover {
+    background-color: var(--brand2);
+}
