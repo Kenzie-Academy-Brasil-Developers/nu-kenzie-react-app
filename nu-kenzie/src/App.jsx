@@ -17,7 +17,9 @@ function App() {
     
     <>
       <Header/>
-      <Form/>
+      <div className='container'>
+        <Form/>
+      </div>
     </>
     
   )

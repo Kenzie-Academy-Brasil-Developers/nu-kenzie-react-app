@@ -2,7 +2,7 @@ import './form.css'
 
 export function Form () {
     return (
-        <form>
+        <form className='form'>
             <label htmlFor="description">Descrição</label>
             <input type="text" name='description' id='description' placeholder='Digite aqui sua descrição' required/>
             <small>Ex: Compra de roupas</small>
@@ -10,7 +10,7 @@ export function Form () {
                 <div>
                     <label htmlFor="value">Valor</label>
                     <input type="text" id='value' name='value' placeholder='0,00'/>
-                    <label htmlFor="value">R$</label>
+                    <label htmlFor="value" className='value-label'>R$</label>
                 </div>
 
                 <div>
