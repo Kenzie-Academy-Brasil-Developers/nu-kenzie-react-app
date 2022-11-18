@@ -5,7 +5,9 @@ import { Section } from './components/Opening Page/Section/section'
 
 function App() {
   
+  
   return (
+    
     <div className="container App">
       <Section/>
       <Figure/>
