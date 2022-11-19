@@ -5,7 +5,7 @@ export function BalanceCard () {
         <li>
             <div></div>
             <div>
-                <h3>Salário - Mês Dezembro</h3>
+                <h2>Salário - Mês Dezembro</h2>
                 <small>Entrada</small>
             </div>
 

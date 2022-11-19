@@ -1,9 +1,10 @@
+import './balance.css'
 import { BalanceCard } from "./Balance Card/balanceCard";
 
 
 export function Balance () {
     return (
-        <section>
+        <section className='section-balance'>
             <div className="div-top">
                 <h2>Resumo Financeiro</h2>
                 <div className="filter-buttons">
@@ -13,13 +14,13 @@ export function Balance () {
                 </div>
             </div>
 
-            <p>Você ainda não possui nenhum lançamento</p>
-            <img src="/src/assets/empty-list.svg" alt="lista vazia" />
+            {/* <p>Você ainda não possui nenhum lançamento</p>
+            <img src="/src/assets/empty-list.svg" alt="Lista vazia" /> */}
 
-            {/* <ul>
+            <ul>
                 <BalanceCard/>
                 <BalanceCard/>
-            </ul> */}
+            </ul>
         </section>
     )
 }

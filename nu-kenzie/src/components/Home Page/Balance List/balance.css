@@ -1,0 +1,53 @@
+.section-balance {
+    width: 560px;
+}
+
+.section-balance h2{
+    font-weight: var(--weight7);
+    font-size: var(--size3);
+}
+
+.div-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.div-top .filter-buttons{
+    display: flex;
+    gap: 15px;
+}
+
+.div-top .filter-buttons button{
+    height: 40px;
+    background-color: var(--grey3);
+}
+
+.div-top .filter-buttons button:hover{
+    background-color: #cfcfcf;
+}
+
+.div-top .filter-buttons .emphasis{
+    background-color: var(--brand1);
+    color: var(--white);
+}
+
+.div-top .filter-buttons .emphasis:hover{
+    background-color: var(--brand2);
+}
+
+.section-balance p{
+    font-weight: var(--weight7);
+    font-size: var(--size2);
+    color: var(--grey1);
+    margin-bottom: 25px;
+}
+
+.section-balance > img{
+    width: 100%;
+}
+
+.section-balance ul{
+    width: 100%;
+}
