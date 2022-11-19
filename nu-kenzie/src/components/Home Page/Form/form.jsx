@@ -9,7 +9,7 @@ export function Form () {
             <div>
                 <div>
                     <label htmlFor="value">Valor</label>
-                    <input type="text" id='value' name='value' placeholder='0.00' required/>
+                    <input type="number" id='value' name='value' placeholder='0.00' required/>
                     <label htmlFor="value" className='value-label'>R$</label>
                 </div>
 
