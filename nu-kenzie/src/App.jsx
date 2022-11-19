@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { Balance } from './components/Home Page/Balance List/balance'
 import { Form } from './components/Home Page/Form/form'
 import { Header } from './components/Home Page/Header/header'
 import { Figure } from './components/Opening Page/Figure/figure'
@@ -25,8 +26,9 @@ function App() {
     
     (<div className='bg-white'>
       <Header homePage={homePage}/>
-      <div className='container'>
+      <div className='container layout'>
         <Form/>
+        <Balance/>
       </div>
     </div>)
     
