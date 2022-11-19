@@ -1,0 +1,53 @@
+.balance-card{
+    width: 100%;
+    background-color: var(--grey4);
+    display: flex;
+    border-radius: 8px;
+}
+
+.balance-card span{
+    width: 5px;
+    height: auto;
+    display: inline-block;
+    border-radius: 8px 0 0 8px;
+}
+
+.balance-card .income-color{
+    background-color: var(--brand3);
+}
+
+.balance-card .debit-color {
+    background-color: var(--brand2);
+}
+
+.balance-card > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px;
+}
+
+.balance-card div h2{
+    margin-bottom: 20px;
+}
+
+.balance-card div small {
+    font-weight: var(--weight4);
+    font-size: var(--size4);
+}
+
+.balance-card div button {
+    background-color: var(--grey3);
+    border-radius: 4px;
+    padding: 8px;
+    margin-left: 40px;
+}
+
+.balance-card div button:hover{
+    background-color: #e2e2e2;
+}
+
+.balance-card div button img{
+    height: 16px;
+}

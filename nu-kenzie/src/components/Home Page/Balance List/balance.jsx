@@ -20,6 +20,7 @@ export function Balance () {
             <ul>
                 <BalanceCard/>
                 <BalanceCard/>
+                <BalanceCard/>
             </ul>
         </section>
     )
