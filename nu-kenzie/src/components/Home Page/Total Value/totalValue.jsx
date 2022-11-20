@@ -2,7 +2,7 @@ import './totalValue.css'
 
 export function TotalValue () {
     return (
-        <div>
+        <div className='total-value'>
             <div>
                 <h2>Valor total:</h2>
                 <span>R$ 500</span>
