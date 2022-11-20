@@ -1,17 +1,17 @@
 import './balanceCard.css'
 
-export function BalanceCard () {
+export function BalanceCard ({description, value, typeOfValue}) {
     return (
         <li className='balance-card'>
-            <span className='income-color'></span>
+            <span className= {typeOfValue == 'Receita' ? 'income-color' : 'debit-color'}></span>
             <div>
                 <div>
-                    <h2>Salário - Mês Dezembro</h2>
-                    <small>Entrada</small>
+                    <h2>{description}</h2>
+                    <small>{typeOfValue}</small>
                 </div>
 
                 <div>
-                    <small>R$ 6000.00</small>
+                    <small>R$ {value}</small>
                     <button>
                         <img src="/src/assets/trash-icon.svg" alt="Excluir Receita" />
                     </button>

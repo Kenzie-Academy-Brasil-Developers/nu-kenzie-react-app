@@ -7,6 +7,25 @@ import { Figure } from './components/Opening Page/Figure/figure'
 import { Section } from './components/Opening Page/Section/section'
 
 function App() {
+  const [balanceData, setBalanceData] = useState([])
+
+  function addBalanceData (newBalanceData) {
+    setBalanceData([...balanceData, newBalanceData])
+  }
+  
+  // const balanceData = [
+  //   {
+  //     description: 'Salário - Mês Dezembro',
+  //     value: 6000,
+  //     typeOfValue: 'Receita'
+  //   },
+  //   {
+  //     description: 'Compra - Camiseta Preta',
+  //     value: 60,
+  //     typeOfValue: 'Despesa'
+  //   }
+  // ]
+  
   const [page, setPage] = useState(true)
 
   function openingPage () {
@@ -27,8 +46,8 @@ function App() {
     (<div className='bg-white'>
       <Header homePage={homePage}/>
       <div className='container layout'>
-        <Form/>
-        <Balance/>
+        <Form addBalanceData={addBalanceData}/>
+        <Balance balanceData={balanceData}/>
       </div>
     </div>)
     
