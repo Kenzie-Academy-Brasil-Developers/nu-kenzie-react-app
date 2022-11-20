@@ -1,0 +1,28 @@
+.total-value{
+    margin-top: 16px;
+    padding: 20px;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+}
+
+.total-value div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.total-value div h2{
+    font-weight: var(--weight7);
+    font-size: var(--size4);
+}
+
+.total-value div span{
+    color: var(--brand1);
+    font-weight: var(--weight8);
+    font-size: var(--size4);
+}
+
+.total-value p{
+    font-weight: var(--weight4);
+    font-size: var(--size5);
+}
