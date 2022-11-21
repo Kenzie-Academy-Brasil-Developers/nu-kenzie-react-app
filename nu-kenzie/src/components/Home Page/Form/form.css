@@ -1,5 +1,20 @@
+.layout .section-form{
+    max-width: 365px;
+}
+
+@media (max-width: 860px) {
+    .layout .section-form{
+        width: 280px;
+    }
+
+    .section-form .form div .value-label{
+        right: -80px;
+    }
+    
+}
+
 .form {
-    width: 365px;
+    width: 100%;
     padding: 25px 20px;
     border: 1px solid var(--grey3);
     border-radius: 4px;
@@ -43,6 +58,7 @@ input[type="number"] {
 .form > div{
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .form div > div{

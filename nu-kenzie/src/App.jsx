@@ -25,22 +25,26 @@ function App() {
   }
   
   return (
-    page ? 
-    (<div className="container App">
-      <Section openingPage={openingPage}/>
-      <Figure/>
-    </div>) : 
-    
-    (<div className='bg-white'>
+    page ? (
+    <div className='bg-dark'>
+      <div className="container App">
+        <Section openingPage={openingPage}/>
+        <Figure/>
+      </div>
+    </div>
+
+    ) : (
+    <div className='bg-white'>
       <Header homePage={homePage}/>
       <div className='container layout'>
-        <section>
+        <section className='section-form'>
           <Form addBalanceData={addBalanceData}/>
           <TotalValue/>
         </section>
         <Balance balanceData={balanceData}/>
       </div>
-    </div>)
+    </div>
+    )
     
   )
 }
