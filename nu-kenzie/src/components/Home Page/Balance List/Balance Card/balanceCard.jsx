@@ -1,8 +1,8 @@
 import './balanceCard.css'
 
-export function BalanceCard ({description, value, typeOfValue}) {
+export function BalanceCard ({balanceId, description, value, typeOfValue, deleteBalanceData}) {
     return (
-        <li className='balance-card'>
+        <li className='balance-card' id={balanceId}>
             <span className= {typeOfValue == 'Receita' ? 'income-color' : 'debit-color'}></span>
             <div>
                 <div>
@@ -12,7 +12,7 @@ export function BalanceCard ({description, value, typeOfValue}) {
 
                 <div>
                     <small>R$ {value}</small>
-                    <button>
+                    <button onClick={() => deleteBalanceData(balanceId)}>
                         <img src="/src/assets/trash-icon.svg" alt="Excluir Receita" />
                     </button>
                 </div>

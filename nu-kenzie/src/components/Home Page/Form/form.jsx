@@ -2,7 +2,10 @@ import { useState } from 'react'
 import './form.css'
 
 export function Form ({ addBalanceData }) {
+    const [balanceId, setBalanceId] = useState(0)
+    
     const [formData, setFormData] = useState([{
+        id: '',
         description: '',
         value: '',
         typeOfValue: ''
@@ -12,8 +15,10 @@ export function Form ({ addBalanceData }) {
         event.preventDefault()
 
         addBalanceData(formData)
+        console.log(formData)
 
         setFormData([{
+            id: '',
             description: '',
             value: '',
             typeOfValue: ''
@@ -40,7 +45,7 @@ export function Form ({ addBalanceData }) {
                     </select>
                 </div>
             </div>
-            <button type="submit">Inserir valor</button>
+            <button type="submit" onClick={() => {setFormData({...formData, id: balanceId}); setBalanceId(balanceId + 1);}}>Inserir valor</button>
         </form>
     )
 }

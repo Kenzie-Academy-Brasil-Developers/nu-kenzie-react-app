@@ -2,7 +2,7 @@ import './balance.css'
 import { BalanceList } from './Balance Ul/balanceUl'
 
 
-export function Balance ({ balanceData }) {
+export function Balance ({ balanceData, deleteBalanceData }) {
     
     if (balanceData != false) {
         return (
@@ -16,7 +16,7 @@ export function Balance ({ balanceData }) {
                     </div>
                 </div>
 
-                <BalanceList balanceData={balanceData}/>             
+                <BalanceList balanceData={balanceData} deleteBalanceData={deleteBalanceData}/>             
             </section>
         )
 

@@ -1,11 +1,11 @@
 import { BalanceCard } from "../Balance Card/balanceCard";
 
 
-export function BalanceList ({ balanceData }) {
+export function BalanceList ({ balanceData, deleteBalanceData }) {
     return (
         <ul>
             {balanceData.map((item, index) => {
-                return <BalanceCard key={index} description={item.description} value={item.value} typeOfValue={item.typeOfValue}/>
+                return <BalanceCard key={index} deleteBalanceData={deleteBalanceData} balanceId={item.id} description={item.description} value={item.value} typeOfValue={item.typeOfValue}/>
             })}
         </ul>
     )
