@@ -14,6 +14,11 @@ function App() {
     setBalanceData([...balanceData, newBalanceData])
   }
   
+  function deleteBalanceData (balanceId) {
+    const updatedList = balanceData.filter((element) => element.id !== balanceId)
+    setBalanceData(updatedList)
+  }
+  
   const [page, setPage] = useState(true)
 
   function openingPage () {
@@ -41,7 +46,7 @@ function App() {
           <Form addBalanceData={addBalanceData}/>
           <TotalValue/>
         </section>
-        <Balance balanceData={balanceData}/>
+        <Balance balanceData={balanceData} deleteBalanceData={deleteBalanceData}/>
       </div>
     </div>
     )
