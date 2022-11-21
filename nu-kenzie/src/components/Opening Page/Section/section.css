@@ -37,3 +37,42 @@
 .section button:hover{
     background-color: var(--brand2);
 }
+
+@media (max-width: 680px) {
+    .section{
+        margin-top: 50px;
+    }
+    
+    .figure {
+        width: 50%;
+        min-width: 200px;
+    }
+    
+    .figure img{
+        display: none;
+    }
+
+    .figure .secondary-img{
+        display: unset;
+        height: unset;
+        width: 100%;
+    }
+
+    .section{
+        max-width: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .figure {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
