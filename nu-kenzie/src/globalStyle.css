@@ -26,10 +26,6 @@ time, mark, audio, video, button, input, select, textarea {
   font-family: 'Nunito', sans-serif;
 }
 
-body{
-  background-color: #242424;
-}
-
 button {
   border-radius: 8px;
   padding: 0.6em 1.2em;
@@ -79,4 +75,56 @@ button {
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
+}
+
+@media (max-width: 725px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .layout .section-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .total-value{
+    margin-top: 0;
+  }
+
+  .total-value div{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .section-balance{
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 565px) {
+  .layout .section-form{
+    flex-direction: column;
+  }
+
+  .form div > div{
+    width: 50%;
+  }
+
+  .total-value{
+    width: 100%;
+  }
+  
+  .total-value div{
+    flex-direction: row;
+  }
+
+  .total-value div h2,
+  .total-value div span{
+    font-size: 20px;
+  }
 }
