@@ -10,19 +10,6 @@ export function Form ({ addBalanceData }) {
         value: '',
         typeOfValue: ''
     }])
-
-    // function setValue (event) {
-    //     console.log(event.target.value)
-    //     console.log(formData)
-    //     if (formData.typeOfValue == 'Receita') {
-    //         setFormData({...formData, value: event.target.value})
-
-    //     } else if (formData.typeOfValue == 'Despesa') {
-    //         setFormData({...formData, value: (event.target.value) * -1})
-
-    //     }
-    // }
-
     function submit (event) {
         event.preventDefault()
 
