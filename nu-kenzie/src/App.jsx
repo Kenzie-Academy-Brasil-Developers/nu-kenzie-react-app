@@ -44,7 +44,7 @@ function App() {
       <div className='container layout'>
         <section className='section-form'>
           <Form addBalanceData={addBalanceData}/>
-          <TotalValue/>
+          <TotalValue balanceData={balanceData}/>
         </section>
         <Balance balanceData={balanceData} deleteBalanceData={deleteBalanceData}/>
       </div>
