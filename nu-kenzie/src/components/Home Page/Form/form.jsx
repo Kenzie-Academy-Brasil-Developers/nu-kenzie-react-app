@@ -4,24 +4,24 @@ import './form.css'
 export function Form ({ addBalanceData }) {
     const [balanceId, setBalanceId] = useState(0)
     
-    const [formData, setFormData] = useState([{
+    const [formData, setFormData] = useState({
         id: '',
         description: '',
         value: '',
         typeOfValue: ''
-    }])
+    })
     function submit (event) {
         event.preventDefault()
 
         addBalanceData(formData)
         console.log(formData)
 
-        setFormData([{
+        setFormData({
             id: '',
             description: '',
             value: '',
             typeOfValue: ''
-        }])
+        })
     }
     
     return (
