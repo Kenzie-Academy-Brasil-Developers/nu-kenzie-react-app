@@ -1,4 +1,5 @@
 import './balance.css'
+import emptyListImg from '../../../assets/empty-list.svg'
 import { BalanceList } from './Balance Ul/balanceUl'
 
 
@@ -33,7 +34,7 @@ export function Balance ({ balanceData, deleteBalanceData }) {
                 </div>
 
                 <p>Você ainda não possui nenhum lançamento</p>
-                <img src="/src/assets/empty-list.svg" alt="Lista vazia" />
+                <img src={emptyListImg} alt="Lista vazia" />
             </section>
         )
     }
