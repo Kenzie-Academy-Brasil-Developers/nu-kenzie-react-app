@@ -11,6 +11,18 @@ export function Form ({ addBalanceData }) {
         typeOfValue: ''
     }])
 
+    // function setValue (event) {
+    //     console.log(event.target.value)
+    //     console.log(formData)
+    //     if (formData.typeOfValue == 'Receita') {
+    //         setFormData({...formData, value: event.target.value})
+
+    //     } else if (formData.typeOfValue == 'Despesa') {
+    //         setFormData({...formData, value: (event.target.value) * -1})
+
+    //     }
+    // }
+
     function submit (event) {
         event.preventDefault()
 
@@ -39,7 +51,7 @@ export function Form ({ addBalanceData }) {
 
                 <div>
                     <label htmlFor="typeOfValue">Tipo do Valor</label>
-                    <select defaultValue={formData.typeOfValue} onMouseMove={(event) => setFormData({...formData, typeOfValue: event.target.value})} name="typeOfValue" id="typeOfValue">
+                    <select defaultValue={formData.typeOfValue} onClickCapture={(event) => setFormData({...formData, typeOfValue: event.target.value})} name="typeOfValue" id="typeOfValue">
                         <option value="Receita">Receita</option>
                         <option value="Despesa">Despesa</option>
                     </select>
