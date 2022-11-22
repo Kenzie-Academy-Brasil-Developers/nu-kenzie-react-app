@@ -1,4 +1,5 @@
 import './balanceCard.css'
+import trashIcon from '../../../../assets/trash-icon.svg'
 
 export function BalanceCard ({balanceId, description, value, typeOfValue, deleteBalanceData}) {
     return (
@@ -13,7 +14,7 @@ export function BalanceCard ({balanceId, description, value, typeOfValue, delete
                 <div>
                     <small>R$ {value}</small>
                     <button onClick={() => deleteBalanceData(balanceId)}>
-                        <img src="/src/assets/trash-icon.svg" alt="Excluir Receita" />
+                        <img src={trashIcon} alt="Excluir Receita" />
                     </button>
                 </div>
             </div>
